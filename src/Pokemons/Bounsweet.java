@@ -1,9 +1,6 @@
 package Pokemons;
 
-import Moves.Facade;
-import Moves.Rest;
-import Moves.Scald;
-import Moves.Swagger;
+import Moves.*;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
@@ -12,6 +9,6 @@ public class Bounsweet extends Pokemon {
         super(name,level);
         setType(Type.GRASS);
         setStats(42,30,38,30,38,32);
-        setMove(new Swagger());
+        setMove(new Swagger(), new EnergyBall());
     }
 }
